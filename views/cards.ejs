@@ -1,0 +1,20 @@
+<%  posts.slice(-10).forEach(function(post){ %>
+
+
+<div class="card w-250  bg-warning mb-3">
+	<div class="card-header" style="font-size: 10px;"><span class="badge badge-dark"><%=post.category%></span></div>
+	<div class="card-body">
+		<h5 class="card-title" style="text-align: center;"><%=post.title%></h5>
+		<h6 class="card-subtitle mb-2 text-muted" style="text-align: center;"><%=post.tag%></h6>
+		<p class="card-text"> <%=post.content.substring(0, 100) + ""%></p>
+		<a href="/posts/<%=post._id%>" class="btn btn-outline-dark">Read More</a>
+
+	</div>
+	<div class="card-footer">
+	</div>
+</div>
+
+
+
+
+<% }) %>
