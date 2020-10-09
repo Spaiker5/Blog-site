@@ -1,15 +1,16 @@
 /* Header */
 .header {
-	background-color: #f7aa00;
-	height: 20%;
-}
 
-.logo {
-	position: relative;
+	display: block;
+	position: fixed;
+	top: 2%;
 	left: 5%;
-	top: 15%;
+
+	z-index: 7;
 }
 
+
+}
 .sub {
 	right: 5%;
 	top: 5%;
@@ -18,11 +19,14 @@
 }
 
 .category {
-	background-color: #235784;
+	background-color: grey;
+
+	padding-bottom: 12%;
+
 }
 
 .nav-item {
-	color: #bcdbdf;
+	color: Black;
 }
 
 /*\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ Floating Bar \\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -82,12 +86,12 @@
 
 /* Index */
 .main {
-	background-color: #40a8c4;
+	background-color: Black;
 	margin: 0;
 	padding-left: 7%;
 	padding-top: 7%;
 	height: auto;
 }
 .list-group-mine {
-	background-color: #f7aa00 !important;
+	background-color: grey !important;
 }
