@@ -2,13 +2,17 @@
 .header {
 
 	display: block;
-	position: fixed;
-	top: 2%;
-	left: 5%;
-
+	position: relative;
+	top: 25px;
+	left: 0%;
+width: 200px;
+height: 150px;
 	z-index: 7;
 }
 
+.navbar, .navbar-expand-lg .navbar-dark .bg-dark {
+background-image: url("https://logodix.com/logo/274193.jpg");
+}
 
 }
 .sub {
@@ -90,7 +94,7 @@
 	margin: 0;
 	padding-left: 7%;
 	padding-top: 7%;
-	height: auto;
+	height: 100%;
 }
 .list-group-mine {
 	background-color: grey !important;

@@ -19,7 +19,7 @@ app.use(
 	})
 );
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {
+mongoose.connect("mongodb://localhost:27017/tech-blogDB", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
@@ -41,6 +41,18 @@ app.get("/", function(req, res) {
 			posts: posts
 		});
 	});
+});
+app.get("/komp", function(req, res) {
+	Post.find({
+			category: "Komputery"
+		}, function(err, posts) {
+			res.render("index", {
+				posts: posts
+			});
+		}
+
+	);
+
 });
 
 // Compose \\\\\\\\\\\\\\\\\\\\\//////////////////////////////////////
@@ -64,8 +76,20 @@ app.post("/compose", function(req, res) {
 	});
 });
 
+app.get("/posts/:postId", function(req, res) {
 
+	const requestedPostId = req.params.postId;
 
+	Post.findOne({
+		_id: requestedPostId
+	}, function(err, post) {
+		res.render("post", {
+			title: post.title,
+			content: post.content
+		});
+		console.log(post.title);
+	});
+});
 
 
 

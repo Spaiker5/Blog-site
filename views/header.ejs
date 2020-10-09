@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Title</title>
+
 	<link rel="stylesheet" href="master.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -12,30 +12,49 @@
 
 <body>
 
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 		<img src="logo.png" alt="Logo" class="header">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav">
 
-		<div class="Technologia" aria-labelledby="navbarDropdownMenuLink">
-			<a class="dropdown-item" href="#">Komputery</a>
-			<a class="dropdown-item" href="#">GSM</a>
-			<a class="dropdown-item" href="#">Smart</a>
-			<a class="dropdown-item" href="#">Co?</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Technologia
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="/komp">Komputery</a>
+						<a class="dropdown-item" href="#">GSM</a>
+						<a class="dropdown-item" href="#">Smart</a>
+						<a class="dropdown-item" href="#">Co?</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Kosmos
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Loty</a>
+						<a class="dropdown-item" href="#">Badania</a>
+						<a class="dropdown-item" href="#">Wydarzenia</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Internet
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Wydarzenia</a>
+						<a class="dropdown-item" href="#">Nowości</a>
+						<a class="dropdown-item" href="#">Meme</a>
+						<a class="dropdown-item" href="#">Co?</a>
+					</div>
+				</li>
+			</ul>
 		</div>
-
-		<div class="Kosmos" aria-labelledby="navbarDropdownMenuLink">
-			<a class="dropdown-item" href="#">Loty</a>
-			<a class="dropdown-item" href="#">Badania</a>
-			<a class="dropdown-item" href="#">Wydarzenia</a>
-		</div>
-
-		<div class="Internet" aria-labelledby="navbarDropdownMenuLink">
-			<a class="dropdown-item" href="#">Wydarzenia</a>
-			<a class="dropdown-item" href="#">Nowości</a>
-			<a class="dropdown-item" href="#">Meme</a>
-			<a class="dropdown-item" href="#">Co?</a>
-		</div>
-
 	</nav>
-
-	
