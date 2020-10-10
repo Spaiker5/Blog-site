@@ -23,14 +23,14 @@ background-image: url("https://logodix.com/logo/274193.jpg");
 }
 
 .category {
-	background-color: grey;
+	background-color: #686d76;
 
 	padding-bottom: 12%;
 
 }
 
 .nav-item {
-	color: Black;
+	color: #373a40;
 }
 
 /*\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ Floating Bar \\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -48,7 +48,7 @@ background-image: url("https://logodix.com/logo/274193.jpg");
 	text-align: center;
 	padding: 16px;
 	transition: all 0.3s ease;
-	color: white;
+	color: #eeeeee;
 	font-size: 20px;
 }
 
@@ -86,16 +86,26 @@ background-image: url("https://logodix.com/logo/274193.jpg");
 .compose {
 	padding: 30%;
 	padding-top: 7%;
+		background-color: #373a40;
+		color: #eeeeee;
+}
+#mytextarea {
+	background-color: #686d76;
 }
 
+/* Post */
+.post {
+background-color: #373a40;
+height: 100%;
+}
 /* Index */
 .main {
-	background-color: Black;
+	background-color: #373a40;
 	margin: 0;
 	padding-left: 7%;
 	padding-top: 7%;
 	height: 100%;
 }
 .list-group-mine {
-	background-color: grey !important;
+	background-color: #686d76 !important;
 }

@@ -1,16 +1,18 @@
 
 <%- include("header"); -%>
+<div class="compose-theme">
+
 
     <form class="compose" action="/compose" method="post">
       <div class="form-group">
-        <label>Title</label>
+        <label>Tytuł</label>
         <input class="form-control" type="text" name="postTitle">
         <label>Post</label>
-        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
-				<label>Category</label>
+        <textarea id="mytextarea" class="form-control" name="postBody" rows="5" cols="30"></textarea>
+				<label>Kategoria</label>
 				<input class="form-control" type="text" name="postCategory">
 			</div>
-      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+      <button class="btn btn-primary" type="submit" name="button">Leci!</button>
     </form>
-
+</div>
 <%- include("footer"); -%>
